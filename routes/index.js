@@ -24,7 +24,6 @@ router.get("/new", function (req, res, next) {
 })
 
 router.post("/new", function (req, res, next) {
-  console.log()
   messages.push({
     text: req.body.MessageText,
     user: req.body.Sender,
@@ -32,9 +31,5 @@ router.post("/new", function (req, res, next) {
   })
   res.redirect("/")
 })
-
-module.exports = router
-
-// Work from point 6 from TOP
 
 module.exports = router
