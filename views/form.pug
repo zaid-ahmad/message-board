@@ -1,0 +1,15 @@
+extends layout 
+
+block content
+    h1= title
+    form(action="/new" method="POST")
+        .nameinp.inp
+            label(for="name") Your name *
+            input(id='name' type="text" required name="Sender" placeholder="Eg: Zaid Ahmad")
+
+        .msginp.inp
+            label(for="msg") Message *
+            textarea(id='msg' name="MessageText" cols="30" rows="10" required placeholder="Eg: Hey, what's up?" minlength="3"
+          maxlength="300") 
+        
+        button.btn.btn-primary(type='submit' class='makepost') Post Message

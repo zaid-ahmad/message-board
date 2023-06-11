@@ -1,8 +1,83 @@
-body {
+.container {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+.message-list {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 5%;
+  background-color: #9f9f9f33;
+  padding: 3% 10%;
+  border-radius: 7px;
+  width: 350px;
+  margin-left: -20px;
+}
+
+textarea {
+  resize: none;
+  columns: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.msg {
+  font-weight: 300;
+}
+
+.date {
+  display: flex;
+  color: grey;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 0.75rem;
+}
+
+.makepost {
+  font-size: 14px;
+  background-color: dodgerblue;
+  color: #fff;
+  font-weight: bold;
+  padding: 3%;
+  border: none;
+  border-radius: 7px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input,
+textarea {
+  padding: 2%;
+  border-radius: 4px;
+  border: 1px solid #515151;
 }

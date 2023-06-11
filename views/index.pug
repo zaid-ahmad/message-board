@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+    .block
+        h1= title
+
+        a(href="/new" class='makepost') Send a message
+
+
+    if messages.length 
+        ul(class='message-list')
+            for message in messages
+                li
+                    span(class='username')  #{message.user}: 
+                    span(class='msg') "#{message.text}"
+                    span(class='date') (#{message.added})
+
+    else
+        p We can't seem to find any messages in our database. Click on the blue button to send a message.
